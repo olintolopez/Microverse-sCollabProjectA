@@ -2,25 +2,138 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Math Web</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
   </head>
-
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <div class="webLogo"> Web</div><div class="design">Math</div>
+        </div>
 
-    <!--
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">Support Videos</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    Hello Camper!
+      <div class="container"></div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <section id="hero">
+        <h2>Enter your email and we will write to you soon to answer it</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Get Contact" class="btn" />
+        </form>
+      </section>
 
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-university"></i></div>
+            <div class="desc">
+              <h2>Math counseling</h2>
+              <p>
+                We are able to advise you on mathematics content at any level.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-tasks"></i></div>
+            <div class="desc">
+              <h2>Quick solution of your math homework</h2>
+              <p>
+                We solve your tasks and we can explain the solution 
+                with all the necessary details.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-user-graduate" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>We have a community of mathematics teachers</h2>
+              <p>
+                For students who request our services, we will make sure that 
+                they have a math teacher and we guarantee the effectiveness of 
+                the advising since we have a staff that will constantly be supervising 
+                and checking that each student is satisfied.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          
+          <iframe 
+              id="video"
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/fnhFneOz6n8" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">Subscription by month</div>
+            <h2>$50.</h2>
+            <ol>
+              <li>This subscription is monthly.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">Subscription by 6 month</div>
+            <h2>$90.</h2>
+            <ol>
+              <li>This subscription is every 6 months.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Subscription by 1 year</div>
+            <h2>$120.</h2>
+            <ol>
+              <li>This subscription is per year</li>
+              <li>You will enjoy our service for 1 year</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2023, Olinto and Daniel</span>
+      </footer>
+    </div>
   </body>
 </html>
